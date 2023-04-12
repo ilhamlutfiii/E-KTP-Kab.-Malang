@@ -1,0 +1,76 @@
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: white;
+}
+* {
+box-sizing: border-box;
+}
+/* Add padding to containers */
+.container {
+padding: 16px;
+background-color: white;
+}
+/* Full-width input fields */
+input[type=text]{
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+input[type=text]:focus{
+background-color: #ddd;
+outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+/* Set a style for the submit button */
+.daftarbtn {
+background-color: blue;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+.registerbtn:hover {
+opacity: 1;
+}
+a {
+color: dodgerblue;
+}
+</style>
+<form action="/action_page.php">
+<div class="container">
+<h1>Daftar E-KTP</h1>
+<p>Silahkan diisi dengan benar!</p>
+<hr>
+<label for="nama"><b>Nama Lengkap</b></label>
+<input type="text" placeholder="Nama Lengkap" name="nama"
+required>
+<label for="ttl"><b>TTL</b></label>
+<input type="text" placeholder="TTL" name="ttl"
+required>
+<label for="alm"><b>Alamat</b></label>
+<input type="text" placeholder="Alamat" name="alm"
+required>
+<label for="ag"><b>Agama</b></label>
+<input type="text" placeholder="Agama" name="ag"
+required>
+<label for="sp"><b>Status Perkawinan</b></label>
+<input type="text" placeholder="Sudah Kawin/Belum Kawin" name="sp"
+required>
+<label for="pk"><b>Pekerjaan</b></label>
+<input type="text" placeholder="Masih Pelajar/Swasta/Wiraswasta" name="pk"
+required>
+<hr>
+<button type="submit" class="daftarbtn">Daftar</button>
+</div>
+</form>
